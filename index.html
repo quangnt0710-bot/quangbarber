@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quang – Thợ cắt tóc 0 đồng</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Facebook / Zalo preview -->
+<meta property="og:title" content="Quang – Thợ cắt tóc 0 đồng ✂️">
+<meta property="og:description" content="Tuyển mẫu nam – Cắt tóc hoàn toàn miễn phí cho sinh viên">
+<meta property="og:image" content="images/avatar.jpg">
+
+<style>
+:root{
+  --gold:#d4af37;
+  --dark:#000;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+}
+
+section{
+  padding:28px 16px;
+  max-width:600px;
+  margin:auto;
+}
+
+h1,h2{
+  color:var(--gold);
+}
+
+h1{
+  font-size:26px;
+  margin-top:16px;
+}
+
+img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* Avatar */
+.avatar img{
+  width:160px;
+  height:160px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid var(--gold);
+}
+
+/* Animation */
+.fade{
+  opacity:0;
+  transform:translateY(18px);
+  animation:fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp{
+  to{opacity:1;transform:none}
+}
+
+/* Gallery */
+.block{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-bottom:20px;
+}
+
+/* Popup */
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+}
+.popup img{
+  max-width:95%;
+  max-height:95%;
+}
+
+/* Contact */
+.phone{
+  font-size:22px;
+  color:var(--gold);
+  margin-top:18px;
+  font-weight:bold;
+}
+
+/* Floating buttons */
+.floating{
+  position:fixed;
+  right:16px;
+  bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:2000;
+}
+
+.btn{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  color:#fff;
+  text-decoration:none;
+  animation:shake 0.6s ease;
+}
+
+.call{background:#28a745}
+.zalo{background:#0068ff}
+
+@keyframes shake{
+  0%{transform:scale(0.85)}
+  60%{transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+</style>
+</head>
+
+<body>
+
+<!-- AVATAR -->
+<section class="fade avatar">
+  <img src="images/avatar.jpg" alt="Quang Barber">
+  <h1>Quang – Thợ cắt tóc 0 đồng ✂️</h1>
+</section>
+
+<!-- GIỚI THIỆU -->
+<section class="fade">
+  <p style="font-size:18px;line-height:1.7">
+    Chào các bạn sinh viên, anh là <b>Quang</b>, thợ cắt tóc nam. Hiện anh đang tuyển mẫu nam để nâng cao tay nghề.
+    <br><br>
+    Anh ưu tiên các kiểu tóc gọn gàng, dễ đi học – đi làm. Nếu bạn đang muốn đổi kiểu tóc, chỉnh form cho gọn hơn
+    hoặc đơn giản là cắt tóc ngắn cho mát, cứ yên tâm liên hệ anh.
+    <br><br>
+    Anh cắt tóc kỹ, có trao đổi trước khi cắt và <b>cắt tóc hoàn toàn miễn phí</b>.
+  </p>
+</section>
+
+<!-- TIÊU ĐỀ MẪU TÓC -->
+<section class="fade">
+  <h2>Các mẫu tóc anh đã cắt cho khách</h2>
+</section>
+
+<!-- 5 KHỐI ẢNH -->
+<section class="fade">
+
+  <div class="block">
+    <img src="images/toc1-1.jpg" onclick="openImg(this)">
+    <img src="images/toc1-2.jpg" onclick="openImg(this)">
+    <img src="images/toc1-3.jpg" onclick="openImg(this)">
+    <img src="images/toc1-4.jpg" onclick="openImg(this)">
+  </div>
+
+  <div class="block">
+    <img src="images/toc2-1.jpg" onclick="openImg(this)">
+    <img src="images/toc2-2.jpg" onclick="openImg(this)">
+    <img src="images/toc2-3.jpg" onclick="openImg(this)">
+    <img src="images/toc2-4.jpg" onclick="openImg(this)">
+  </div>
+
+  <div class="block">
+    <img src="images/toc3-1.jpg" onclick="openImg(this)">
+    <img src="images/toc3-2.jpg" onclick="openImg(this)">
+    <img src="images/toc3-3.jpg" onclick="openImg(this)">
+    <img src="images/toc3-4.jpg" onclick="openImg(this)">
+  </div>
+
+  <div class="block">
+    <img src="images/toc4-1.jpg" onclick="openImg(this)">
+    <img src="images/toc4-2.jpg" onclick="openImg(this)">
+    <img src="images/toc4-3.jpg" onclick="openImg(this)">
+    <img src="images/toc4-4.jpg" onclick="openImg(this)">
+  </div>
+
+  <div class="block">
+    <img src="images/toc5-1.jpg" onclick="openImg(this)">
+    <img src="images/toc5-2.jpg" onclick="openImg(this)">
+    <img src="images/toc5-3.jpg" onclick="openImg(this)">
+    <img src="images/toc5-4.jpg" onclick="openImg(this)">
+  </div>
+
+</section>
+
+<!-- LIÊN HỆ -->
+<section class="fade">
+  <h2>Liên hệ đăng ký cắt tóc</h2>
+
+  <p style="font-size:17px;line-height:1.6;font-style:italic;max-width:500px;margin:18px auto;">
+    Bạn có thể liên hệ bằng cách <b>gọi điện trực tiếp</b> hoặc <b>nhắn tin qua Zalo</b>
+    để đăng ký lịch cắt tóc. Anh sẽ phản hồi sớm và tư vấn kiểu tóc phù hợp.
+  </p>
+
+  <!-- MẸO TÂM LÝ -->
+  <p style="font-size:15px;opacity:0.85;max-width:480px;margin:0 auto 18px;">
+    ⓘ Anh chỉ nhận số lượng mẫu nhất định mỗi ngày, bạn nào cần cắt nên nhắn trước để anh sắp xếp nhé.
+  </p>
+
+  <img src="images/duongdi.jpg" alt="Đường đi">
+
+  <div class="phone">📞 0375 121 231</div>
+</section>
+
+<!-- POPUP -->
+<div class="popup" onclick="this.style.display='none'">
+  <img id="popupImg">
+</div>
+
+<!-- NÚT NỔI -->
+<div class="floating">
+  <a class="btn call" href="tel:0375121231">📞</a>
+  <a class="btn zalo" href="https://zalo.me/0375121231">💬</a>
+</div>
+
+<script>
+function openImg(img){
+  document.getElementById("popupImg").src = img.src;
+  document.querySelector(".popup").style.display = "flex";
+}
+</script>
+
+</body>
+</html>
